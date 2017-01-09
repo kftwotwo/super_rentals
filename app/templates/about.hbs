@@ -1,9 +1,12 @@
-<h2>About Super Rentals</h2>
+<div class="container">
+  <h2>About Super Rentals</h2>
 
-<p>The Super Rentals website was created to explore the wonderful world of Ember.js. This project allows us to imagine traveling the world while simultaneously traversing the pathways of the Ember framework!</p>
+  <div class="nav"><hr>
+    {{#link-to 'index'}}Home{{/link-to}} |
+    {{#link-to 'about'}}About{{/link-to}} |
+    {{#link-to 'contact'}}Contact{{/link-to}} |
+    {{#link-to 'announcement'}}News{{/link-to}}
+  </div><hr>
 
-
-{{#link-to 'index'}}Home{{/link-to}} <br>
-{{#link-to 'about'}}About{{/link-to}} <br>
-{{#link-to 'contact'}}Contact{{/link-to}}<br>
-{{#link-to 'announcement'}}News{{/link-to}}
+  <p>The Super Rentals website was created to explore the wonderful world of Ember.js. This project allows us to imagine traveling the world while simultaneously traversing the pathways of the Ember framework!</p>
+</div>
