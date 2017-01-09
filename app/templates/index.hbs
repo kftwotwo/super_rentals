@@ -2,6 +2,12 @@
 
 <p>We hope you find exactly what you're looking for in a place to stay.</p>
 
+<ul>
+  {{#each model as |rental|}}
+  <li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}</li>
+  {{/each}}
+</ul>
+
 
 
 {{#link-to 'index'}}Home{{/link-to}} <br>
