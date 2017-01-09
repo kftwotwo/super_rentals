@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    saveAnnoucement3(params) {
+    saveAnnouncement3(params) {
       var newAnnouncement = this.store.createRecord('announcement', params);
       newAnnouncement.save();
       this.transitionTo('index');
