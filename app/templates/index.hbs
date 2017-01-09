@@ -9,12 +9,12 @@
   </div><hr>
 
   <p>Here is a list of our properties for rent!</p> <br>
-
+  {{log model}}
   <ul>
     {{#each model as |rental|}}
       {{rental-tile rental=rental destroyRental="destroyRental"}} <!-- rendering component on left and from template on right-->
     {{/each}}
-  </ul>
+  </ul><br><hr>
 
   {{new-rental saveRental2="saveRental3"}}
 
