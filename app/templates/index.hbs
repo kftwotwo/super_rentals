@@ -1,16 +1,18 @@
-<h1> Welcome to Super Rentals </h1>
+<div class="container">
+  <h1> Welcome to Super Rentals </h1>
 
-<p>We hope you find exactly what you're looking for in a place to stay.</p>
+  <p>We hope you find exactly what you're looking for in a place to stay.</p>
 
-<ul>
-  {{#each model as |rental|}}
-    {{rental-tile rental=rental destroyRental="destroyRental"}} <!-- rendering component on left and from template on right-->
-  {{/each}}
-</ul>
+  <ul>
+    {{#each model as |rental|}}
+      {{rental-tile rental=rental destroyRental="destroyRental"}} <!-- rendering component on left and from template on right-->
+    {{/each}}
+  </ul>
 
-{{new-rental saveRental2="saveRental3"}}
+  {{new-rental saveRental2="saveRental3"}}
 
 
-{{#link-to 'index'}}Home{{/link-to}} <br>
-{{#link-to 'about'}}About{{/link-to}} <br>
-{{#link-to 'contact'}}Contact{{/link-to}}
+  {{#link-to 'index'}}Home{{/link-to}} <br>
+  {{#link-to 'about'}}About{{/link-to}} <br>
+  {{#link-to 'contact'}}Contact{{/link-to}}
+</div>
