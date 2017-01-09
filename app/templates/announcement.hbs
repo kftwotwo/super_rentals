@@ -2,7 +2,7 @@
 
 <ul>
   {{#each model as |announcement|}}
-     <li>{{announcement.info}} {{announcement.date}}</li>
+     {{announcement-tile announcement=announcement destroyAnnouncement="destroyAnnouncement"}}
   {{/each}}
 </ul>
 
