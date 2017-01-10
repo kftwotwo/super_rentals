@@ -2,8 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('rental', params.rental_id)
-    console.log(this.store.findRecord('rental', params.rental_id))
+    return this.store.findRecord('rental', params.rental_id);
   },
   actions: {
     update(rental, params) {
