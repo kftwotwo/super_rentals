@@ -1,5 +1,7 @@
 <li>
-  {{announcement.info}} {{announcement.date}}
+  <div class="bold">
+    {{announcement.info}} {{announcement.date}}
+  </div><br>
 
-  <button class="btn btn-danger btn-xs" {{action 'delete' announcement}}>Delete</button>
+  <button class="btn btn-danger btn-md" {{action 'delete' announcement}}>Delete</button>
 </li>
