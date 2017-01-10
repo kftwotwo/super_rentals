@@ -1,10 +1,11 @@
 <li>
   <div class="bold">
-    {{rental.owner}}'s {{rental.type}} in {{rental.city}}
+    {{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}}{{/link-to}}
   </div>
   {{#if isImageShowing }}
     <p><img class="img-size well" src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
   {{else}}<br>
     <button class="btn btn-primary btn-md" {{action 'imageShow'}}>Show Image</button>
+
   {{/if}}
 </li>

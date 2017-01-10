@@ -8,6 +8,9 @@ export default Ember.Component.extend({
     },
     imageHide: function() {
      this.set('isImageShowing', false);
+   },
+   model(params) {
+     return this.store.findRecord('rental', params.rental_id);
    }
   }
 });
