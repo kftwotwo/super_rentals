@@ -11,6 +11,11 @@ export default Ember.Component.extend({
    },
    model(params) {
      return this.store.findRecord('rental', params.rental_id);
-   }
+   },
+    delete(review) {
+      if (confirm('Are you sure you want to delete this review?')) {
+        this.sendAction('destroyReview', review);
+      }
+    }
   }
 });

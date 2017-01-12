@@ -9,3 +9,11 @@
 
   {{/if}}
 </li>
+<h4> Reviews </h4>
+<ul>
+  {{#each rental.reviews as |review|}}
+    {{review-tile review=review destroyReview="destroyReview"}}
+  {{/each}}
+</ul>
+
+<button {{action 'delete' rental}}>Delete</button>
